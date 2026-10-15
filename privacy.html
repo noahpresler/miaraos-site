@@ -1,25 +1,35 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Newsreader:opsz@6..72&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>MiaraOS privacy policy</title><meta name="description" content="How MiaraOS handles your family's data."></head><body><main>
 <div class="eyebrow">MiaraOS</div>
 <h1>Privacy policy</h1>
-<p class="muted">Effective October 14, 2026</p>
-<p>MiaraOS helps families keep a shared record of their baby’s feeds, diapers, sleep and growth. This policy explains what MiaraOS stores, why, and the choices you have.</p>
+<p class="muted">Effective [date this version is published]</p>
+<p>MiaraOS helps families keep a shared record of their baby’s feeds, diapers, sleep, solid foods and growth. This policy explains what MiaraOS stores, why, and the choices you have.</p>
 <h2>What we store</h2>
 <ul>
 <li><strong>Account details:</strong> your email address, and your name if you provide it or Apple shares it when you use Sign in with Apple. Used to sign you in and to show caregivers who logged what.</li>
-<li><strong>Your family’s records:</strong> the baby’s name, birth date and sex; feeds, diapers, sleep, growth measurements and notes; and anything you import from a file you choose. Used only to provide the app’s features.</li>
+<li><strong>Your family’s records:</strong> the baby’s name, birth date and sex; feeds, diapers, sleep, solid foods (including allergens introduced and any symptoms you note), growth measurements and notes; and anything you import from a file you choose. Used only to provide the app’s features.</li>
 <li><strong>Household membership:</strong> who belongs to your household and their role (parent, caregiver or viewer), so records are shared with the right people.</li>
+<li><strong>Insights, if a parent turns them on:</strong> each morning and evening insight card, the summary of the log it was written from, and which parent turned insights on and when (see <a href="#insights">Insights</a>).</li>
+<li><strong>Notification tokens:</strong> an identifier for each phone you sign in on, so we can notify it when the log changes or an insight is ready.</li>
 <li><strong>Change history:</strong> a log of additions, edits and deletions, so your household can see who changed what.</li>
 </ul>
 <p>We don’t collect location, contacts, photos, advertising identifiers or analytics, and we don’t track you across other apps or websites.</p>
 <h2>Where it’s stored and who can see it</h2>
-<p>Records are stored with our database provider, Supabase, and are protected so that only members of your household can read them. Growth records are visible only to parents. We don’t sell your data, share it with advertisers or use it to train AI models.</p>
+<p>Records are stored with our database provider, Supabase, and are protected so that only members of your household can read them. Growth records are visible only to parents. Notifications are delivered through Apple’s push notification service. We don’t sell your data, share it with advertisers or use it to train AI models.</p>
 <p>Demo mode uses synthetic data that stays on your device and is never uploaded.</p>
 <h2>How long we keep it</h2>
 <p>We keep your records for as long as your household uses MiaraOS. A record you delete disappears for everyone right away and stays only in your household’s change history. Deleting your account (below) removes your sign-in immediately, and removes any household where you’re the only parent along with all of its records and history.</p>
 <h2>Sign in with Apple</h2>
 <p>If you use Sign in with Apple, Apple shares a stable identifier and, the first time, the name and email you choose to share (which may be a private relay address). We use these only to sign you in.</p>
+<h2 id="insights">Insights</h2>
+<p>Insights are short notes about your baby’s night (in the morning) and day (in the evening): wins worth celebrating, patterns across recent days, typical ranges for your baby’s age, and what to expect at each month, quoted from the CDC and the American Academy of Pediatrics. They’re written with Claude, an AI model made by Anthropic. Insights are off until a parent in your household turns them on, and any parent can turn them off at any time in <strong>Profile → Insights</strong>.</p>
+<ul>
+<li><strong>What’s sent to Anthropic:</strong> a summary MiaraOS computes from your log: sleep stretches and times, feed, nap and diaper counts and amounts, foods tried and allergens introduced, your baby’s age, and typical ranges for that age. It doesn’t include your baby’s name or birth date, your notes, anyone’s name, or your email address. Anthropic writes the card under its commercial terms, which don’t allow it to train its models on this data. See <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a>.</li>
+<li><strong>What MiaraOS stores:</strong> each card and the summary it was written from, visible to the members of your household, and which parent turned insights on and when. Dismissing a card hides it only for you.</li>
+<li><strong>Notifications:</strong> if you allow notifications, each insight’s headline (which may include your baby’s name) is shown on your phone, including the lock screen, depending on your iOS settings. Turn insight notifications off for a phone in <strong>Profile → Insights</strong>.</li>
+<li><strong>Not medical advice:</strong> insights describe your own records and what’s common at your baby’s age. They don’t diagnose anything and aren’t a substitute for your pediatrician.</li>
+</ul>
 <h2>AI assistant connections</h2>
-<p>You can connect MiaraOS to an AI assistant such as Claude, ChatGPT or Gemini, so you can log by saying what happened. You sign in to MiaraOS and approve each connection, which then acts as you, within your role in the household: it can read and change your household’s feeds, sleep and diaper records, and if you’re a parent, read your baby’s growth measurements (weight, length and head size). It can’t change growth records, invite people, or change your household or account.</p>
+<p>You can connect MiaraOS to an AI assistant such as Claude, ChatGPT or Gemini, so you can log by saying what happened. You sign in to MiaraOS and approve each connection, which then acts as you, within your role in the household: it can read and change your household’s feeds, sleep, diaper and solid-food records, and if you’re a parent, read your baby’s growth measurements (weight, length and head size). It can’t change growth records, invite people, or change your household or account.</p>
 <ul>
 <li><strong>What MiaraOS stores:</strong> the records the assistant creates or changes, marked as logged with an assistant, and which connection made the change. We don’t store your conversations with the assistant.</li>
 <li><strong>What the assistant receives:</strong> the records it reads or changes for you, such as your baby’s name, recent feeds, sleep and diapers, and growth measurements you ask about. What you say to the assistant and what MiaraOS returns to it are handled by that assistant’s provider under its own privacy policy.</li>
@@ -28,7 +38,7 @@
 <h2>Your choices</h2>
 <ul>
 <li>You can edit or delete any record in the app.</li>
-<li>To delete your account, open <strong>More → Delete account</strong> in the app. Deletion is immediate and permanent: your sign-in is removed, and so is any household where you’re the only parent, with all of its records. In a household with another parent, the records stay with the family and no longer show your name. You can also ask us by email at <a href="mailto:noah@presler.me?subject=Delete%20my%20MiaraOS%20account">noah@presler.me</a>.</li>
+<li>To delete your account, open <strong>Profile → Delete account</strong> in the app (your profile is the round button at the top right of each screen). Deletion is immediate and permanent: your sign-in is removed, and so is any household where you’re the only parent, with all of its records. In a household with another parent, the records stay with the family and no longer show your name. You can also ask us by email at <a href="mailto:noah@presler.me?subject=Delete%20my%20MiaraOS%20account">noah@presler.me</a>.</li>
 <li>You can ask for a copy of your data by emailing <a href="mailto:noah@presler.me">noah@presler.me</a>.</li>
 </ul>
 <h2>Children</h2>
